@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .main{
+            color: white;
+            justify-content: center;
+            display: flex;
+            background-color:black;
+            /* align-items: center; */
+            flex-direction: row;
+        }
+        .main button{
+            border: none;
+            border-radius: 10px;
+            width: 100px;      
+            height: 54px;
+            background-color:bisque;
+        }
+        .d{
+            display: flex;
+        }
+        .d1{
+            display: flex;
+        }
+        .main1{
+            display: flex;
+        }
+        .a{
+            width: 50%;
+        }
+        .a1{
+            width: 50%;
+        }
+        .main2{
+            width: 100%;
+            height: 400px;
+            background-color: black;
+            text-align: center;
+        }
+        .a2{
+            color:peru;
+        }
+        .a3{
+            color:white;
+        }
+        .main2 button{
+            border: none;
+            border-radius: 20px;
+            width: 100px;
+            height: 44px;
+            background-color:bisque;
+        }
+        .m{
+            height: 700px;
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgoldenrodyellow;
+        }
+        .main3{
+            display: flex;
+            width: 60%;
+            height: 300px;
+            align-items: center;
+            flex-direction: column;
+            background-color: lightgoldenrodyellow;
+        }
+        .a4{
+            color:darkgoldenrod;
+        }
+        .main3 button{
+            border: none;
+            border-radius: 30px;
+            width: 150px;
+            height: 54px;
+            background-color:bisque;
+        }
+        .main4{
+            height: 400px; 
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgoldenrodyellow;
+            flex-direction: row;
+        }
+        .a6{
+            /* display: flex; */
+            width: 0%;
+            /* align-items: center; */
+        }
+        .a7{
+            width: 50%;
+        }
+        .a8{
+            width: 100%;
+        }
+        .main5{
+            width: 100%;
+            height: 400px;
+            text-align: center;
+            background-color: black;
+        }
+        .a10{
+            color: white;
+        }
+        .main5 button{
+            border: none;
+            border-radius: 30px;
+            width: 150px;
+            height: 54px;  
+            background-color:bisque;
+        }
+        .main6{
+            background-color: lightgoldenrodyellow;
+        }
+        .m1{
+            text-align: center;
+        }
+        .m2{
+            display: flex;
+            justify-content: space-around;
+        }
+        .a13{
+            width: 300px;
+            height: 300px;
+            background-color: chocolate;
+            text-align: center;
+        }
+        .b1{
+            width: 300px;
+            height: 100px;
+            align-items: center;
+            background-color: white;
+        }
+        .a13 img{
+            transition: transform 0.3s ease-in-out;
+        }
+        .a13 img:hover{
+            transform: scale(1.1,1.1);
+        }
+        .m3{
+            text-align: center;
+        }
+        .a16 img{
+            transition: transform 0.3s ease-in-out;
+        }
+        .a16 img:hover{
+            transform: scale(1.3,1);
+        }
+        .m4{
+            text-align: center;
+        }
+        .m5{
+            display: flex;
+            justify-content: space-around;
+        }
+        .a20{
+            width: 700px;
+            text-align: center;
+            background-color: white;
+        }
+        .a20 button{
+            border: none;
+            border-radius: 30px;
+            width: 150px;
+            height: 54px;  
+            background-color:bisque;
+        }
+        .a19 img{
+            width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+        .a19 img:hover{
+            transform: scale(0.9,0.9);
+        }
+        .m6{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            background-color: white;
+        }
+        .a22{
+            text-align: center;
+        }
+        .a18 img{
+            border: none;
+            border-radius: 50px;
+            width: 110px;
+            height: 110px;
+        }
+        .s{
+            color: gold;
+        }
+        .m7{
+            display: flex;
+            justify-content:space-between;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .a25 ion-icon{
+            width: 50px;
+            height: 50px;
+        }
+        p{
+            text-align: center;
+        }
+        span{
+            color: darkgoldenrod;
+        }
+
+        @media(max-width:550px){
+            .main{
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+            .d{
+                display: flex;
+                justify-content:center ;
+            }
+            .d1{
+                display: none;
+            }
+            .main3{
+                display: flex;
+                /* width: 500px; */
+                text-align: center;
+                flex-direction: column;
+            }
+            .main4{
+                display: none;
+            }
+            .m2{
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+            .a13{
+                width: 100%;
+            }
+            .b1{
+                text-align: center;
+                width: 100%;
+            }
+            .m3{
+                text-align: center;
+            }
+            .a16 img{
+                width: 100%;
+                transition: transform 0.3s ease-in-out;
+            }
+            .a16 img:hover{
+                transform: scale(0.9,1);
+            }
+            .m5{
+                display: flex;
+                flex-direction: column;
+            }
+            .a20{
+                width: 100%;
+            }
+            .a21{
+                display: none;
+            }
+            .a23{
+                display: none;
+            }
+            .m7{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="d">
+            <p><ion-icon name="mail-outline"></ion-icon></p>
+            <p>info@example.com</p> 
+        </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p><ion-icon name="time-outline"></ion-icon></p>
+            <p>Open Hours: Mon - Fri 8.00 am - 6.00 pm</p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="d1">
+        <p><ion-icon name="ellipsis-vertical-outline"></ion-icon></p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <P><ion-icon name="logo-facebook"></ion-icon></P> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <P><ion-icon name="logo-twitter"></ion-icon></P> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <P><ion-icon name="logo-instagram"></ion-icon></P> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <P><ion-icon name="ellipsis-vertical-outline"></ion-icon></p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button> <h3>Order Now</h3></button>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="a">
+        <img src="logo.png" alt="">
+        </div>
+        <div class="a1"> <br><br>
+        <output>HOME</output> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <output>ABOUT US</output> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <output>GALLARY</output>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <output>MENU</output>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <output>CONTACT</output>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="a2"> <br><br><br><br><br>
+            <h2><i>Ultimate Food</i></h2>
+        </div>
+        <div class="a3">
+            <h1>We Serve Quality Food</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, mollitia tempora dolorem ab expedita, porro facilis quod est,<br> quae rerum doloribus ut provident.</p>
+            <button> <b>Order Now</b></button>
+        </div>
+    </div>
+    
+    <div class="m">
+    <div class="main3">
+        <div class="a4">
+            <h1><i>OUR STORY</i></h1>
+        </div>
+        <div class="a5">
+            <h1> Traditional & Modern <br> Service <span>Since 1970</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Dolorem nemo excepturi possimus, neque explicabo quos <br>eius quisquam sit placeat, quas dolores asperiores accusamus, <br>fugiat ad. Modi dicta eveniet exercitationem eum!</p>
+            <img src="p4.png" alt=""> <br><br><br>
+            <button> Our Story</button>
+        </div>
+    </div>
+    <div class="main4">
+        <div class="a6"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <img src="p2.png" alt="">
+        </div>
+        <div class="a7">
+            <img src="p1.png" alt="">
+        </div>
+        <div class="a8"> <br><br><br><br><br><br><br>
+            <img src="p3.png" alt="">
+        </div>
+    </div>
+    </div>
+
+    <div class="main5">
+        <div class="a4"><br><br><br>
+            <h1><i>Get 20% Discount</i></h1>
+        </div>
+        <div class="a10">
+            <h1>Explore Special Test & The <br>Best Quality.</h1>
+            <button> <b>Order Now</b></button>
+        </div>
+    </div>
+
+    <div class="main6">
+        <div class="m1">
+            <div class="a4">
+                <h1><i>FOOD FOR YOU</i></h1>
+            </div>
+            <div class="a12">
+                <h1>Our Best Sallers</h1>
+            </div>
+        </div>
+        <div class="m2">
+            <div class="a13">
+                <img src="p5.png" alt="">
+                <div class="b1">
+                    <b>Strawberry Jam Toast</b>
+                </div>
+            </div> <br><br><br>
+
+            <div class="a13">
+                <img src="p6.png" alt="">
+                <div class="b1">
+                    <b>Penne pasta with meatball</b>
+                </div>
+            </div><br><br><br>
+
+            <div class="a13">
+                <img src="p7.png" alt="">
+                <div class="b1">
+                    <b>Fried eggs sandwiches</b>
+                </div>
+            </div><br><br><br>
+
+            <div class="a13">
+                <img src="p8.png" alt="">
+                <div class="b1">
+                    <b>Fried eggs sandwiches</b>
+                </div>
+            </div> 
+
+        </div><br><br><br><br>
+
+        <div class="m2">
+            <div class="a13">
+                <img src="p5.png" alt="">
+                <div class="b1">
+                    <b>Strawberry Jam Toast</b>
+                </div>
+            </div><br><br><br>
+            <div class="a13">
+                <img src="p6.png" alt="">
+                <div class="b1">
+                    <b>Penne pasta with meatball</b>
+                </div>
+            </div> <br><br><br>
+            <div class="a13">
+                <img src="p7.png" alt="">
+                <div class="b1">
+                    <b>Fried eggs sandwiches</b>
+                </div>
+            </div> <br><br><br>
+            <div class="a13">
+                <img src="p8.png" alt="">
+                <div class="b1">
+                    <b>Fried eggs sandwiches</b>
+                </div>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="m3">
+            <div class="a4">
+                <h1><i>Food For You</i></h1>
+            </div>
+            <div class="a15">
+                <h1>OUR GALLARY</h1>
+            </div>    
+            <div class="a16">
+                <img src="p9.jpg" alt="">
+            </div>
+        </div><br><br><br><br><br><br>
+
+        <div class="m4">
+            <div class="a4">
+                <h1><i>Promotion</i></h1>
+            </div>
+            <div class="a18">
+                <h1>Special Offers</h1>
+            </div>
+        </div>
+
+        <div class="m5">
+            <div class="a19">
+                <img src="p10.jpg" alt="">
+            </div>
+            <div class="a20">
+                <h1>Over <span>250</span> Delicious & Tasty <br>Recipes</h1> <br>
+                <h1><span>Get 25% Off</span></h1> <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Esse nemo quaerat ducimus reprehenderit, atque sequi explicabo <br>veniam adipisci asperiores, numquam, voluptatum neque voluptates <br>eaque iusto earum sapiente architecto aut illum.</p> <br><br>
+                <button>Let's Order Now</button>
+            </div>
+        </div> <br><br>
+
+        <div class="m5">
+            <div class="a20">
+                <h1>Over <span>250</span> Delicious & Tasty <br>Recipes</h1> <br>
+                <h1><span>Get 25% Off</span></h1> <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Esse nemo quaerat ducimus reprehenderit, atque sequi explicabo <br>veniam adipisci asperiores, numquam, voluptatum neque voluptates <br>eaque iusto earum sapiente architecto aut illum.</p> <br><br>
+                <button>Let's Order Now</button>
+            </div>
+            <div class="a19">
+                <img src="p11.jpg" alt="">
+            </div>
+        </div> <br><br><br><br><br><br><br>
+
+        <div class="m6">
+            <div class="a21"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img src="p3.png" alt="">
+            </div>
+            <div class="a22">
+                <div class="a4">
+                    <h1><i>Testimonials</i></h1>
+                </div>
+                <div class="a18">
+                    <h1>What Clients Say <br> About <span>Restauranst</span></h1>
+                    <img src="p12.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis sed tenetur dolorem, <br> quasi, vel numquam velit unde repudiandae doloribus ex, esse obcaecati inventore <br>neque? Tempore necessitatibus illo libero modi.</p>
+                    <div class="s">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h2>Sandra Bullock</h2>
+                    <h3>Manager</h3>
+                </div>
+            </div>
+            <div class="a23">
+                <img src="p13.png" alt="">
+            </div>
+        </div> <br><br><br><br>
+
+        <div class="m7">
+            <div class="a24">
+                <h1>Opening Times</h1>
+                <p>Monday - Thursday:08AM - 10PM</p>
+                <p>Friday - Saturday:10AM - 11:30Pm</p>
+                <p>Sunday : <span>Closed</span></p>
+                <p>Booking Time : 24/7 Hours</p>
+            </div>
+            <div class="a25">
+                <img src="logo.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Perferendis quam magnam velit provident perspiciatis deserunt <br> libero, eos excepturi, quas veniam veritatis voluptates repellendus <br>nobis pariatur,  atque sint ad quasi repellat.</p> <br><br>
+                <ion-icon name="logo-facebook"></ion-icon> &nbsp;&nbsp;&nbsp;
+                <ion-icon name="logo-twitter"></ion-icon> &nbsp;&nbsp;&nbsp;
+                <ion-icon name="logo-instagram"></ion-icon> 
+            </div>
+            <div class="a26">
+                <h1>Contact Info</h1>
+                <p><span>Address</span> : 256,baker <br> Street,Ahmedabad - Gujarat</p>
+                <p><span>Email</span> : example@info.com</p>
+                <p><span>Call</span> : +91 0000 0000 00</p>
+            </div>
+        </div><br>
+        <p>Copyright 2022 by Restaurant All Right Reserved. Petpooja</p> <br><br>
+    </div>
+</body>
+</html>
